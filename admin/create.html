@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- redressed font -->
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap" rel="stylesheet">
+
+		<!-- overpass font -->
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Overpass:wght@100;200;300;400;600;700;800;900&display=swap" rel="stylesheet">
+
+		<!-- font awesome -->
+		<script src="https://kit.fontawesome.com/225094b662.js" crossorigin="anonymous"></script>
+		
+		<!-- styles -->
+		<link rel="stylesheet" href="../style/common.css">
+		<link rel="stylesheet" href="../style/layout.css">
+		<link rel="stylesheet" href="../style/main.css">
+
+		<title>upEvents</title>
+	</head>
+	<body>
+		<!-- nav -->
+		<nav class="main-nav">
+			<a class="brand" href="../index.html">UpEvents</a>
+
+			<ul class="auth">
+				<li><a href="../login.html">login</a></li>
+				<li><a href="../register.html">register</a></li>	
+			</ul>
+		</nav>
+
+		<nav class="side-nav">
+			<ul class="">
+				<li><a href="index.html" class="text-center">&larr; go back</a></li>	
+			</ul>		
+
+			<footer class="main-footer">
+				<p>&copy; 2020 UpEvents</p>
+			</footer>
+		</nav>
+
+		<article class="admin">
+			<div class="container">
+
+				<!-- form -->
+				<section class="form">
+					<h4 class="text-center">Create New Event</h4>
+					<form id="create-form" class="form form--group" action="submit">
+						<label for="">event title
+								<input class="form--input event-title" type="text" name="title" placeholder="What's the event title" required/>
+						</label>
+
+						<label for="">Image
+								<input class="form--input event-image" type="text" name="image" placeholder="Image Link" required/>
+						</label>
+
+						<div class="host-location">
+							<label for="">event host
+								<input class="form--input" type="text" name="host" placeholder="Event host" required/>
+							</label>
+							<label for="">location
+								<input class="form--input" type="text" name="location" placeholder="Location" required/>
+							</label>
+						</div>
+
+						<div class="date-time">
+							<label for="">event date
+								<input class="form--input" type="date" name="date" placeholder="date" required/>
+							</label>
+							<label for="">start time
+								<input class="form--input" type="time" name="start_time" placeholder="From: Starting time" required/>
+							</label>
+							<label for="">ending time
+								<input class="form--input" type="time" name="end_time" placeholder="To: Ending time" required/>
+							</label>
+						</div>
+
+						<label class="" for="">event type
+							<div class="event-type">
+								<label for="">leap<input type="checkbox" name="leap"></label>
+								<label for="">meetup<input type="checkbox" name="meetup"></label>
+								<label for="">recruiting mission<input type="checkbox" name="recruiting_mission"></label>
+								<label for="">hackathon<input type="checkbox" name="hackathon"></label>
+								<select class="form--select" name="free_paid" id="free_paid">
+									<option value="open">open webinar</option>
+									<option value="prenium">premium-only webinar</option>
+								</select>
+							</div>
+						</label>
+
+						<label for="">
+							event description
+							<textarea class="form--textarea" name="description" id="description" cols="30" rows="10" placeholder="Event description" required></textarea>
+						</label>
+						<button class="btn lg primary" type="submit">Submit</button>
+					</form>
+				</section>
+
+			</div>
+		</article>
+
+		<script src="../script/upeventsDB.js"></script>
+		<script src="../script/upeventsUI.js"></script>
+		<script src="../script/admin/create.js"></script>
+	</body>
+</html>

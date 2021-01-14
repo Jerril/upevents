@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- redressed font -->
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap" rel="stylesheet">
+
+		<!-- overpass font -->
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Overpass:wght@100;200;300;400;600;700;800;900&display=swap" rel="stylesheet">
+		
+		<!-- styles -->
+		<link rel="stylesheet" href="style/common.css">
+		<link rel="stylesheet" href="style/layout.css">
+		<link rel="stylesheet" href="style/main.css">
+
+		<title>upEvents</title>
+	</head>
+	<body>
+		<!-- nav -->
+		<nav class="main-nav">
+			<a class="brand" href="index.html">UpEvents</a>
+
+			<ul class="auth">
+				<li><a href="login.html">login</a></li>
+				<li><a href="register.html">register</a></li>
+			</ul>
+		</nav>
+
+		<article>
+			<div class="container">
+
+				<!-- login form -->
+				<section id="register-form">
+					<h3 class="text-center">Register</h3>
+					<form class="form form--group" action="" method="GET">
+						<input class="form--input" type="email" name="email" placeholder="Email" required/>
+						<input class="form--input" type="password" name="password" placeholder="Password" required/>
+						<input class="form--input" type="password" name="cf_password" placeholder="Confirm Password" required/>
+						<div class="error"></div>
+						<button class="btn lg primary" type="submit">Submit</button>
+					</form>
+				</section>
+			</div>
+		</article>
+
+		<footer class="main-footer">
+			<p>&copy; 2020 upEvents</p>
+		</footer>
+
+		<script src="script/upeventsDB.js"></script>
+		<script src="script/upeventsUI.js"></script>
+		<script src="script/register.js"></script>
+	</body>
+</html>

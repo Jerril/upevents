@@ -1,0 +1,297 @@
+body {
+	color: #707070;
+	font-family: 'Overpass', 'Segoe UI', 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	font-weight: 200;
+	line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+	color: #141414;
+	display: block;
+	font-weight: 700;
+	margin: .2em 0;
+}
+
+h1, .h1 {
+	font-size: 3em;
+}
+
+h2, .h2 {
+	font-size: 2.5em;
+}
+
+h3, .h3 {
+	font-size: 2em;
+}
+
+h4, .h4 {
+	font-size: 1.5em;
+}
+
+h5, .h5 {
+	font-size: 1.2em;
+}
+
+h6, .h6 {
+	font-size: 1em;
+}
+
+p {
+	font-size: .95em;
+	/*line-height: 1.5;*/
+	margin: 0 0 1.5rem;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.error {
+	color: red;
+}
+
+strong, b {
+	color: #474747;
+	font-weight: 700;
+}
+
+em, i {
+	color: #474747;
+}
+
+a {
+	color: #0055bd;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+a:focus {
+	/*outline: 1px solid #eee;*/
+	outline: 0;
+}
+
+ul, ol {
+	margin: 1.5rem 0;
+	padding: 0 0 0 1.5rem;
+}
+
+li {
+	line-height: 1.7;
+	font-size: .95em;
+}
+
+/*images*/
+img {
+	display: block;
+	position: absolute;
+	top: 50%;
+	right: 0;
+	left: 50%;
+	bottom: 0;
+	transform: translateX(-50%) translateY(-50%);
+	max-width: 100%;
+	height: auto;
+}
+
+/* buttons */
+.btn {
+	border: 0;
+	background-color: #2DCA73;
+	display: inline-block;
+	width: auto;
+	margin-bottom: 1rem;
+	color: #fff;
+	cursor: pointer;
+	font-size: .9em;
+	padding: 1em 2em;
+	text-transform: capitalize;
+	font-family: inherit;
+	line-height: 1;
+	transition: all .3s ease;
+	vertical-align: middle;
+}
+
+.btn:hover,
+.btn:active {
+	opacity: .8;
+	text-decoration: none;
+}
+
+.btn:focus {
+	outline: 1px solid #000;
+}
+
+/* button sizes */
+.btn.sm {
+	font-size: .7em;
+}
+
+.btn.lg {
+	font-size: 1em;
+	width: 100%;
+	text-transform: uppercase;
+}
+
+/* button styles */
+.btn.rounded {
+	border-radius: 5px;
+}
+
+.btn.outline {
+	background-color: transparent;
+	border: 1px solid #C2C2C2;
+}
+
+.btn.outline:hover {
+	border-color: #0A0A0A;
+	color: #0A0A0A;
+}
+
+/* button color */
+.btn.primary {
+	background-color: #0071bd;
+	color: #fff;
+}
+
+.btn.primary:hover {
+	background-color: #0A9DFF;
+}
+
+.btn.primary.outline {
+	background-color: transparent;
+	border-color: #0071bd;
+	color: #0071bd;
+}
+
+.btn.primary.outline:hover {
+	border-color: #001623;
+	color: #001623;
+}
+
+.btn.light.outline {
+	background-color: transparent;
+	border-color: #fff;
+	color: #fff;
+}
+
+.btn.light.outline:hover {
+	background-color: #fff;
+	color: #101010;
+}
+
+/*forms*/
+.form {
+	width: 70%;
+	margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+	.form {
+		width: 50%;
+		margin: 0 auto;
+	}	
+}
+
+.form--group {
+	display: block;
+	margin-bottom: 1rem;
+	position: relative;
+}
+
+.form--label {
+	font-size: .9em;
+}
+
+.form--input {
+	border: 0;
+	border: 1px solid #ccc;
+	font-size: .9em;
+	padding: 1rem;
+	width: 100%;
+	margin-bottom: 1.5rem;
+}
+
+.form--textarea {
+	border: 0;
+	border: 1px solid #ccc;
+	font-size: .9em;
+	min-height: 100px;
+	padding: .6rem 1rem;
+	width: 100%;
+	margin-bottom: 1.5rem;
+}
+
+.form--select {
+	border: 0;
+	border: 1px solid #ccc;
+	font-size: inherit;
+	font-weight: 300;
+	color: #707070;
+	width: 100%;
+	margin-bottom: 1.5rem;
+	font-size: inherit;
+}
+
+/*helper*/
+.sr-only {
+	position:absolute;
+	left:-10000px;
+	top:auto;
+	width:1px;
+	height:1px;
+	overflow:hidden;
+}
+
+/*validation*/
+.help-block {
+	display: block;
+}
+
+.help.help-block {
+	display: none;
+}
+
+.form-error {
+	color: #E0471E;
+	font-size: .9em;
+	font-weight: 600;
+	margin-top: .3rem;
+}
+
+.form--character-count {
+	font-size: .9em;
+	text-align: right;
+}
+
+@media (min-width: 768px) {
+	.help.help-block {
+		background-color: #0092F4;
+		box-shadow: 0 0 15px rgba(0,0,0,.4);
+		bottom: 115%;
+		border-radius: 5px;
+		color: #fff;
+		font-size: .9em;
+		line-height: 2.4rem;
+		padding: 0 1rem;
+		position: absolute;
+		right: 0;
+	}
+
+	.help.help-block::after {
+		background-color: #0092F4;
+		content: "";
+		display: block;
+		height: 10px;
+		left: 50%;
+		margin-left: -5px;
+		margin-top: -5px;
+		position: absolute;
+		top: 100%;
+		transform: rotate(45deg);
+		width: 10px;
+	}
+}

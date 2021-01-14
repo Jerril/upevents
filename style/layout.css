@@ -1,0 +1,36 @@
+* {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0;
+}
+
+.container {
+	width: 100vh;
+	margin: 0 auto;
+	padding: 0 1.5rem;
+	overflow: hidden;
+}
+
+@media screen and (min-width: 768px) {
+	.container {
+		width: 720px;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.container {
+		width: 960px;
+	}
+}
+
+@media screen and (min-width: 1221px) {
+	.container {
+		width: 1170px;
+	}
+}
+
+@media screen and (min-width: 1440px) {
+	.container {
+		width: 1360px;
+	}
+}

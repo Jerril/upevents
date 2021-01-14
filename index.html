@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- redressed font -->
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap" rel="stylesheet">
+
+		<!-- overpass font -->
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Overpass:wght@100;200;300;400;600;700;800;900&display=swap" rel="stylesheet">
+		
+		<!-- styles -->
+		<link rel="stylesheet" href="style/common.css">
+		<link rel="stylesheet" href="style/layout.css">
+		<link rel="stylesheet" href="style/main.css">
+
+		<title>upEvents</title>
+	</head>
+	<body>
+		<!-- nav -->
+		<nav class="main-nav">
+			<a class="brand" href="index.html">upEvents</a>
+
+			<ul class="auth">
+				<li><a href="login.html">login</a></li>
+				<li><a href="register.html">register</a></li>	
+			</ul>
+		</nav>
+
+		<article>
+			<div class="container">
+				<!-- jumbotron -->
+				<section class="jumbotron">
+					<div class="intro">
+						<h1>Get interesting events <br /> happening around you</h1>
+						<form id="search" action="search.html" method="GET">
+							<input class="form--input" type="text" name="q" placeholder="Search for events"/>
+							<button class="btn" type="submit">Search</button>
+						</form>
+					</div>
+				</section>
+
+				<!-- upcoming events -->
+				<section id="events" class="upcoming-events">
+					<h5>Upcoming Events</h5>
+
+					<div class="grid"></div>
+				</section>
+			</div>
+		</article>
+		<footer class="main-footer">
+			<p>&copy; 2020 UpEvents</p>
+		</footer>
+
+		<script src="script/upeventsDB.js"></script>
+		<script src="script/upeventsUI.js"></script>
+		<script src="script/index.js"></script>
+	</body>
+</html>

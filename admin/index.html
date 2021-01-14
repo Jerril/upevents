@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- redressed font -->
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap" rel="stylesheet">
+
+		<!-- overpass font -->
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Overpass:wght@100;200;300;400;600;700;800;900&display=swap" rel="stylesheet">
+
+		<!-- font awesome -->
+		<script src="https://kit.fontawesome.com/225094b662.js" crossorigin="anonymous"></script>
+		
+		<!-- styles -->
+		<link rel="stylesheet" href="../style/common.css">
+		<link rel="stylesheet" href="../style/layout.css">
+		<link rel="stylesheet" href="../style/main.css">
+
+		<title>upEvents</title>
+	</head>
+	<body>
+		<!-- nav -->
+		<nav class="main-nav">
+			<a class="brand" href="../index.html">UpEvents</a>
+
+			<ul class="auth">
+				<li><a href="../login.html">login</a></li>
+				<li><a href="../register.html">register</a></li>	
+			</ul>
+		</nav>
+
+		<nav class="side-nav">
+			<ul class="">
+				<li><a class="text-center" href="">welcome &#128512;</a></li>	
+			</ul>		
+
+			<footer class="main-footer">
+				<p>&copy; 2020 UpEvents</p>
+			</footer>
+		</nav>
+
+		<article class="admin">
+			<div class="container">
+
+				<section class="admin--header">
+					<h4>all events <span>(0)</span></h4>
+					<a href="create.html" class="btn primary rounded"><i class="fas fa-plus"></i> create new event</a>
+				</section>
+
+				<!--  -->
+				<section class="admin-body">
+					<div class="header">
+						<span>title</span>
+						<span>host</span>
+						<span>price</span>
+						<span>date</span>
+					</div>
+
+					<ul></ul>
+				</section>
+				
+			</div>
+		</article>
+
+		<script src="../script/upeventsDB.js"></script>
+		<script src="../script/upeventsUI.js"></script>
+		<script src="../script/admin/index.js"></script>
+	</body>
+</html>

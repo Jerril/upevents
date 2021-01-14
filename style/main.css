@@ -1,0 +1,534 @@
+/* nav */
+.main-nav {
+	width: 100%;
+	height: 80px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #fff;
+	/*box-shadow: 0 6px 31px -2px rgba(0, 0, 0, 0.05);*/
+	z-index: 2;
+}
+
+.main-nav .brand {
+	display: block;
+	margin: 0 1.5rem;
+	font-family: "Goldman", "Arial";
+	font-size: 23px;
+	font-weight: 700;
+	color: #FAAC01;
+	/*color: #122C6C;*/
+}
+
+.main-nav .auth {
+	margin: 0;
+	list-style-type: none;
+	padding: 0;
+	height: 100%;
+	display: flex;
+}
+
+.main-nav .auth li {
+	display: block;
+	text-transform: capitalize;
+	height: 100%;
+}
+
+.main-nav .auth a {
+	display: block;
+	height: 100%;
+	width: 100%;
+	line-height: 75px;
+	padding: 0 1.5rem;
+	color: #000;
+	font-weight: 400;
+	font-size: 14px;
+	transition: all .3s ease;
+}
+
+.main-nav .auth a:hover {
+	background-color: #F8F7FA;
+	
+}
+
+/*article*/
+article {
+	/*width: 100%;*/
+	margin-top: 90px;
+	z-index: 0;
+}
+
+/*jumbotron*/
+.jumbotron {
+	width: 100%;
+	height: 250px;
+	padding: 0 3rem;
+	background-color: #F8F7FA;
+}
+
+.jumbotron div {
+	position: relative;
+	top: 50px;
+}
+
+.jumbotron h1 {
+	font-size: 2rem;
+	line-height: 2.5rem;
+}
+
+.jumbotron form {
+	display: block;
+	margin-top: 1rem;
+	display: flex;
+	align-items: center;
+	/*box-shadow: 0 6px 31px -2px rgba(0, 0, 0, 0.05);*/
+	position: relative;
+}
+
+.jumbotron input {
+	border: 0;
+	display: block;
+	margin-bottom: 0;
+	font-size: inherit;
+	padding: 0 100px 0 1rem;
+	height: 55px;
+}
+
+.jumbotron input:focus {
+	outline: 0;
+}
+
+.jumbotron button {
+	display: block;
+	margin-bottom: 0;
+	font-size: inherit;
+	padding: 0 1rem;
+	height: 45px;
+	background-color: #FAAC01;
+	position: absolute;
+	right: 5px;
+	top: 5px;
+}
+
+.jumbotron button:focus,
+.jumbotron button:hover {
+	outline: 0;
+	opacity: .8;
+}
+
+/*jumbotron/article responsive*/
+@media (min-width: 768px) {
+	.jumbotron {
+		height: 300px;
+	}
+
+	.jumbotron div {
+		top: 60px;
+	}
+
+	.jumbotron h1 {
+		font-size: 2.5rem;
+		line-height: 3rem;
+	}
+
+	.jumbotron form {
+		width: 50%;
+		margin-top: 1.5rem;
+	}
+}
+
+/*upcoming events*/
+.upcoming-events {
+	margin: 3rem 0;
+}
+
+.upcoming-events h5{
+	margin: 0;
+	margin-bottom: .8rem;
+	font-weight: 700;
+}
+
+.upcoming-events .grid {
+	display: grid;
+  	grid-template-columns: 50% 50%;
+  	grid-gap: 30px;
+}
+
+.upcoming-events .grid-item {
+	box-shadow: 0 16px 64px -16px rgba(46,55,77,.1);
+}
+
+.upcoming-events .grid-item:hover {
+	box-shadow: 0 16px 64px -16px rgba(46,55,77,.2);
+}
+
+
+.upcoming-events .grid-item a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	color: #707070;
+	position: relative;
+}
+
+.upcoming-events .grid-item .event-type {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	color: #fff;
+	padding: .1rem 1rem;
+	font-size: 12px;
+	z-index: 1;
+}
+
+.upcoming-events .grid-item .event-type.free {
+	background-color: #0f0;
+}
+
+.upcoming-events .grid-item .event-type.paid {
+	background-color: orange;
+}
+
+.upcoming-events .grid-item .image-container {
+	width: 100%;
+	height: 125px;
+	position: relative;
+	overflow: hidden;
+}
+
+.upcoming-events .grid-item figcaption {
+	padding: 1.2rem 1rem;
+}
+
+.upcoming-events .grid-item figcaption p {
+	margin: 0;
+}
+
+.upcoming-events .grid-item figcaption .date {
+	text-transform: uppercase;
+	margin-bottom: .5rem;
+	font-size: 12px;
+	font-weight: 400;
+	color: #FAAC01;
+}
+
+.upcoming-events .grid-item figcaption .title {
+	color: #000;
+	font-size: 16px;
+	font-weight: 700;
+}
+
+
+/*upcoming events responsive*/
+@media (min-width: 992px) {
+	.upcoming-events .grid {
+	  	grid-template-columns: auto auto auto;
+	  	grid-gap: 30px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.upcoming-events .grid {
+	  	grid-template-columns: 25% 25% 25% 25%;
+	  	grid-gap: 30px;
+	}
+}
+
+/*footer*/
+.main-footer {
+	text-align: center;
+	color: #000;
+	font-weight: 500;
+}
+
+/*event details*/
+.event-intro .event-banner {
+	width: 100%;
+	height: 300px;
+	position: relative;
+	overflow: hidden;
+}
+
+.event-intro .event-info {
+	padding: 1rem 2rem;
+	border: 1px solid #eee;	
+}
+
+.event-intro .event-info .event-date {
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+.event-intro .event-info .event-title {
+	font-weight: 500;
+	font-size: 1.2em;
+	line-height: 1.4;
+}
+
+.event-intro .event-info .event-host {
+	margin-top: .5rem;
+}
+
+.event-desc {
+	margin: 3rem 0;
+}
+
+.event-desc .left {
+	padding-right: 1.5rem;
+}
+
+.event-desc .left h3 {
+	font-weight: 500;
+	font-size: 1.2em;
+	line-height: 1.4;
+	margin-bottom: 1rem;
+}
+
+.event-desc .right p {
+	margin: 0;
+}
+
+.event-desc .right .date-time p:first-child,
+.event-desc .right .location p:first-child {
+	font-weight: 500;
+	margin-bottom: 1rem;
+}
+
+.event-desc .right .location p:first-child {
+	margin-top: 1rem;	
+}
+
+@media (min-width: 768px) {
+	.event-intro {
+		display: grid;
+		grid-template-columns: 65% 35%;
+	}
+
+	.event-intro .event-banner {
+		height: auto;
+	}
+
+	.event-desc {
+		display: grid;
+		grid-template-columns: 65% 35%;
+	}
+}
+
+
+/*search results*/
+#result.upcoming-events {
+	margin: 0rem 0;
+	margin-bottom: 3rem;
+}
+
+.result--header {
+	margin-bottom: 2rem;
+	display: flex;
+	align-items: center;
+}
+
+#result.upcoming-events h4 {
+	display: block;
+	margin: 0;
+	text-transform: capitalize;
+}
+
+#result.upcoming-events span {
+	display: block;
+	margin-left: 1rem;
+}
+
+/*admin*/
+.side-nav {
+	display: none;
+	margin-top: 80px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 150px;
+	height: 100%;
+}
+
+.side-nav ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.side-nav ul li {
+	text-transform: capitalize;
+}
+
+.side-nav ul li a {
+	display: block;
+	color: inherit;
+	padding: 2rem 1.5rem;
+	transition: all .3s ease;
+}
+
+.side-nav ul li a:hover {
+	background-color: #eee;
+}
+
+.admin {
+	margin-top: 80px;
+}
+
+.admin--header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem 0;
+}
+
+.admin--header  a i{
+	color: #fff;
+	padding-right: 5px;
+}
+
+.admin h4{
+	margin: 0;
+	text-transform: capitalize;
+}
+
+.admin .btn {
+	padding: 1rem;
+	margin-bottom: 0;
+}
+
+.admin-body .header {
+	background-color: #F9FAFC;
+	font-weight: 500;
+	font-size: .8em;
+	text-transform: uppercase;
+	display: grid;
+	grid-template-columns: 35% 20% 12% 13%;
+	padding: .6rem 1rem;
+	margin-top: 1rem;
+}
+
+.admin-body .header span {
+	display: inline-block;
+}
+
+.admin-body ul {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+
+.admin-body ul li {
+	display: grid;
+	grid-template-columns: 35% 20% 12% 13% 20%;
+	padding: .5rem;
+	border-bottom: 1px solid #eee;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+}
+
+.admin-body ul li span {
+	text-transform: capitalize;
+}
+
+.admin-body li span a,
+.admin-body li span button {
+	display: inline-block;
+	margin: 0 .2rem;
+}
+
+.admin-body li span button:focus {
+	outline: 0;
+}
+
+.admin-body li span button.trash {
+	border: 0;
+	background-color: transparent;
+	cursor: pointer;
+	padding: 0;
+	color: #f00;
+}
+
+.admin-body li span a.view {
+	color: #2DCA73;
+}
+
+/*admin responsive*/
+@media (min-width: 992px) {
+	.side-nav {
+		display: block;
+	}
+
+	.admin {
+		margin-left: 150px;
+	}
+
+	.admin-body .header {
+		grid-template-columns: 50% 20% 7% 8%;
+		padding: .6rem 1rem;
+	}
+
+	.admin-body ul li {
+		grid-template-columns: 50% 20% 7% 8% 15%;
+		padding: 1.5rem 1rem;
+	}
+
+	.admin-body li span a {
+		display: inline-block;
+		margin: 0 .5rem;
+	}	
+}
+
+/*create/edit event*/
+.admin .form {
+	width: 100%;
+}
+
+.admin .form label {
+	text-transform: capitalize;
+	display: block;
+	font-weight: 500;
+}
+
+.admin .form input {
+	display: inline-block;
+}
+
+.admin .form select {
+	display: inline-block;
+}
+
+.admin .form textarea {
+	display: block;
+}
+
+.admin .form div {
+	display: grid;
+	grid-gap: 1rem;
+}
+
+.admin .form .host-location {
+	grid-template-columns: auto auto;
+}
+
+.admin .form .date-time {
+	grid-template-columns: auto auto auto;
+}
+
+.admin .form .event-type {
+	grid-template-columns: auto auto auto auto auto;
+}
+
+.admin input[type=checkbox] {
+	margin-left: 4px;
+}
+
+/*edit/create responsive*/
+@media (min-width: 992px) {
+	.admin .form {
+		width: 80%;
+	}
+}
